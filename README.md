@@ -1,11 +1,13 @@
 # docker-cpuminer
-Execute cpuminer in a docker container.
+Execute cpuminer for [BitZeny](http://bitzeny.org/) in a docker container.
 
 ## Prerequisites
 - Docker (Community Edition) environment  
   https://docs.docker.com/engine/installation/
 
 ## Assumptions
+- Mining BitZeny coin  
+  Perhaps you can use this repository for other cryptocurrencies.
 - Using a mining pool
 - Using `yescrypt` algorithm  
   But you can change it by editing `mining.sh`.
