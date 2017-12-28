@@ -15,4 +15,7 @@ RUN ./autogen.sh && \
     ./configure CFLAGS="-O3 -march=native -funroll-loops -fomit-frame-pointer" && \
     make
 
-ENTRYPOINT ["/bin/bash"]
+COPY ./mining.sh .
+RUN chmod +x mining.sh
+
+ENTRYPOINT ["/cpuminer/mining.sh"]
