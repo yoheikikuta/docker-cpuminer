@@ -25,6 +25,6 @@ You need to pass arguments about {pool url, user name, worker name, worker passw
 $ docker run -it --rm [IMAGE NAME] -o [POOL URL] -u [USER NAME] -w [WORKER NAME] -p [WORKER PASSWORD]
 (mining will start)
 ```
-(e.g., `docker run --rm -it cpuminer -c stratum+tcp://bitzenypool.work:19666 -u foo -w bar -p foobar` )
+(e.g., `docker run --rm -it cpuminer -o stratum+tcp://bitzenypool.work:19666 -u foo -w bar -p foobar` )
 
 You can quit mining by `Ctrl + C`.
